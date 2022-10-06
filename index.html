@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="node_modules/three/build/three.min.js"></script>
+    <script src="node_modules/gsap/TweenMax.js" type="module"></script>
+    <script src="node_modules/hover-effect/dist/hover-effect.umd.js"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+</head>
+<body>
+    <section>
+        <nav>
+            <h3>Foodie . </h3>
+            <ul>
+                <li>Home</li>
+                <li>Collection</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <div class="search">
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+        <div class="side-indicator">
+            <div class="line"></div>
+            <div class="index active one">
+                <p>1</p>
+            </div>
+            <div class="index two">
+                <p>2</p>
+            </div>
+            <div class="index three">
+                <p>3</p>
+            </div>
+            <div class="index four">
+                <p>4</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-wrpper">
+                <div class="text">
+                    <div class="title">
+                        <h4>Pancake</h4>
+                        <h4>Hamburger</h4>
+                        <h4>Pasta</h4>
+                        <h4>Taco</h4>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, rem cum officia qui, nobis quas laborum quibusdam soluta in, voluptas reiciendis. Repudiandae pariatur a animi cumque, at eos quos corrupti. Pariatur laboriosam adipisci voluptatibus non nemo laudantium porro ex inventore.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, rem cum officia qui, nobis quas laborum quibusdam soluta in, voluptas reiciendis. Repudiandae pariatur a animi cumque, at eos quos corrupti. Pariatur laboriosam adipisci voluptatibus non nemo laudantium porro ex inventore.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, rem cum officia qui, nobis quas laborum quibusdam soluta in, voluptas reiciendis. Repudiandae pariatur a animi cumque, at eos quos corrupti. Pariatur laboriosam adipisci voluptatibus non nemo laudantium porro ex inventore.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, rem cum officia qui, nobis quas laborum quibusdam soluta in, voluptas reiciendis. Repudiandae pariatur a animi cumque, at eos quos corrupti. Pariatur laboriosam adipisci voluptatibus non nemo laudantium porro ex inventore.</p>
+                    </div>
+                    <div class="btn">
+                        <p>Explore</p>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="glide">
+                <div class="glide__cover"></div>
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="slide one">
+                            <p>Pancake</p>
+                            <div class="rating">
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="https://images.unsplash.com/photo-1506458539166-34079f9e1d2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1009&q=80" alt="">
+                                <div class="bookmark">
+                                    <i class="fas fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="slide two">
+                            <p>Hamburger</p>
+                            <div class="rating">
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1022&q=80" alt="">
+                                <div class="bookmark">
+                                    <i class="fas fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="slide three">
+                            <p>Pasta</p>
+                            <div class="rating">
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="https://images.unsplash.com/photo-1516100882582-96c3a05fe590?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="">
+                                <div class="bookmark">
+                                    <i class="fas fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="slide four">
+                            <p>Taco</p>
+                            <div class="rating">
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle active"></div>
+                                <div class="circle"></div>
+                            </div>
+                            <div class="slider-img">
+                                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80" alt="">
+                                <div class="bookmark">
+                                    <i class="fas fa-bookmark"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+                <div data-glide-el="controls" class="controls">
+                    <button data-glide-dir="<" id="prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button data-glide-dir=">" id="next">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                  </div>
+              </div>
+              <div class="background"></div>
+        </div>
+    </section>
+ 
+
+
+
+
+
+  
+    <script src="app.js" type="module"></script>
+</body>
+</html>
